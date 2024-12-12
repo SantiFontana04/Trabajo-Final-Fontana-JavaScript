@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web con API y Validaciones</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="peliculas.png" type="image">
+    <meta name="description" content="Esta página es un buscador de películas diseñado para facilitar la exploración y descubrimiento de títulos cinematográficos. Utiliza la API de The Movie Database (TMDB), una de las bases de datos de películas más completas y reconocidas a nivel mundial, para ofrecer resultados precisos y actualizados. ">
+    <meta name="author" content="Santiago Fontana">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Movie Finder</h1>
+        <nav>
+            <ul>
+                <li><a href="#contenido">Contenido</a></li>
+                <li><a href="#api">API</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Contenido Principal -->
+    <section id="contenido">
+        <h2 class="contenido__subtitle">Contenido Principal</h2>
+        <p class="contenido__p">Esta página funciona como un buscador de películas diseñado para facilitar la exploración y descubrimiento de títulos cinematográficos. Utiliza la API de The Movie Database (TMDB), una de las bases de datos de películas más completas y reconocidas a nivel mundial, para ofrecer resultados precisos y actualizados. Solo necesitas ingresar el nombre de una película en la barra de búsqueda y, en pocos segundos, recibirás información detallada, incluyendo el título, póster y otros datos relevantes. Es una herramienta ideal tanto para los amantes del cine que buscan recomendaciones como para aquellos que desean recordar algún clásico o encontrar títulos específicos. Además, su diseño intuitivo y visualmente atractivo permite una experiencia de usuario agradable y sencilla.</p>
+    </section>
+
+    <!-- Sección de API -->
+    <section id="api">
+        <h2>Buscador de películas</h2>
+        <div id="movies-container">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Escribe el título de una película">
+                <button type="submit" id="search-button">Buscar</button>
+            </form>
+            <div id="results-container" class="movie-grid"></div>
+        </div>
+    </section>
+    
+
+    <!-- Sección de Formulario -->
+    <section id="formulario">
+        <form>
+            <h2>Formulario de Suscripción</h2>
+    
+            <fieldset>
+                <legend>INFORMACIÓN BÁSICA</legend>
+                <div class="form_input">
+                    <label for="nombre">Nombre completo
+                        <input type="text" placeholder="Juan Pérez" id="nombre">
+                    </label>
+                </div>
+    
+                <div class="form_input">
+                    <label for="email">Email
+                        <input type="email" placeholder="ejemplo@gmail.com" id="email">
+                    </label>
+                </div>
+    
+                <div class="form_input">
+                    <label for="asunto">Contraseña
+                        <input type="password" placeholder="Crea tu contraseña" id="asunto">
+                    </label>
+                </div>
+            </fieldset>
+            <div class="form_input">
+                <label>Tipo de usuario
+                    <select name="type-of-user" aria-label="Selecciona el tipo de usuario">
+                        <option value="user1">Seguidor/a</option>
+                        <option value="user2">Empresa</option>
+                        <option value="user3">Otros</option>
+                    </select>
+                </label>
+            </div>
+    
+            <div class="form_input">
+                <label for="mensaje">Mensaje
+                    <textarea rows="9" placeholder="Deja tu mensaje..." id="mensaje"></textarea>
+                </label>
+            </div>
+    
+            <div class="form_input">
+                <label>Acepto los <a href="#" target="_blank">términos y condiciones</a>
+                    <input class="checkbox" type="checkbox" id="terms">
+                </label>
+            </div>
+    
+            <div class="form_input">
+                <input class="submit" type="submit" value="Enviar" id="submit-button">
+            </div>
+        </form>
+        <div id="form-message"></div>
+    </section>
+    
+    <script src="main.js"></script>
+</body>
+</html>

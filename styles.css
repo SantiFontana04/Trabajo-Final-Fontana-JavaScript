@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #ddd;
+    background: linear-gradient(to bottom, #333, #111)
+}
+
+header {
+    background: #111;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    opacity: 0.75;
+}
+
+section {
+    padding: 2rem;
+}
+
+.contenido__subtitle {
+    color: #ddd;
+    font-size: 1.5rem;
+}
+
+.contenido__p {
+    color: #ddd;
+    text-wrap: pretty;
+    font-size: 1.2rem;
+} 
+
+#api {
+    background-color: #111;
+}
+
+#search-form{
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0px 0px 20px #fff1;
+}
+
+#search-input {
+    padding: 8px;
+}
+
+#search-button {
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+#search-button:hover {
+    opacity: 0.75;
+}
+
+.movie-grid {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 50px;
+    margin: 40px 0;
+    text-align: center;
+    text-wrap: pretty;
+    justify-items: center;
+    justify-content: center;
+}
+
+.movie-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.movie-card h3 {
+    font-size: 1.2rem;
+    margin-top: 8px;
+    color: #333;
+}
+
+.search {
+    text-align: center;
+    justify-content: center;
+}
+
+
+h2 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.4em;
+    padding: 10px;
+}
+
+form {
+    background-color: transparent;
+    padding: 20px 0;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0px 0px 55px #fff1;
+    margin-top: 50px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.form_input {
+    padding: 2px 20px;
+}
+
+input, textarea, select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: none;
+    border: 1px solid #666;
+    box-shadow: 0px 0px 15px #0003;
+    background-color: transparent;
+    border-radius: 4px;
+    color: #ddd;
+}
+
+option {
+    background-color: #222;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    min-height: 102px;
+    font-family: sans-serif;
+}
+
+label {
+    font-size: 0.9em;
+    line-height: 2.2;
+}
+
+.checkbox {
+    width: auto;
+}
+
+fieldset {
+    border-radius: 5px;
+    border: 1px solid #666;
+    padding: 8px 6px 20px 10px;
+    margin: 20px;
+}
+
+legend {
+    padding: 0 6px;
+    color: #bbb
+}
+
+.submit {
+    background-color: #ccc;
+    color: #222;
+    min-height: 30px;
+}
+
+.submit:hover {
+    opacity: 0.75;
+}
